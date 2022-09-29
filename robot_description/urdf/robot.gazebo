@@ -52,4 +52,27 @@
   <selfCollide>true</selfCollide>
 </gazebo>
 
+  <gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>joint_front_left</leftFrontJoint>
+    <rightFrontJoint>joint_front_right</rightFrontJoint>
+    <leftRearJoint>joint_back_left</leftRearJoint>
+    <rightRearJoint>joint_back_right</rightRearJoint>
+    <wheelSeparation>0.46</wheelSeparation>
+    <wheelDiameter>0.16</wheelDiameter>
+    <robotBaseFrame>robot_footprint</robotBaseFrame>
+    <torque>200</torque>
+    <MaxForce>5.0</MaxForce>
+    <commandTopic>turtle1/cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <broadcastTF>true</broadcastTF>
+    <covariance_x>0.001</covariance_x> <!-- 0.0001 -->
+    <covariance_y>0.001</covariance_y> <!-- 0.0001 -->
+    <covariance_yaw>0.01</covariance_yaw> <!-- 0.01 -->
+  </plugin>
+</gazebo>
+
 </robot>

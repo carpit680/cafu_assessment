@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # CAFU Technical Task
 
 ## Scenario
@@ -12,9 +14,9 @@ avoid the obstacles
 
 ## Checklist
 
-* ~~In the Gazebo simulation need to use the 3D model of the robot which will be provided.~~
-* Need to Create a ROS node to control the provided 3Dmodel using a hardware joystick.
-* Use the same node and setup to create a SLAM map.
-* Need to Create a ROS node to automatically avoid the obstacles on the way.
-* Need to Create a ROS node for GPS waypoint Navigation.
-* Need to create the simulation in the Gazebo according by the provided scenario.
+- ~~In the Gazebo simulation need to use the 3D model of the robot which will be provided.~~ (roslaunch robot_description gazebo.launch)
+- ~~Need to Create a ROS node to control the provided 3Dmodel using a hardware joystick.~~ (rosrun turtlesim turtle_teleop_key)
+- Use the same node and setup to create a SLAM map.
+- Need to Create a ROS node to automatically avoid the obstacles on the way.
+- Need to Create a ROS node for GPS waypoint Navigation.
+- Need to create the simulation in the Gazebo according by the provided scenario.
