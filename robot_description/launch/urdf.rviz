@@ -7,7 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
-        - /TF1
+        - /RobotModel1/Links1
       Splitter Ratio: 0.5
     Tree Height: 747
   - Class: rviz/Selection
@@ -60,19 +60,23 @@ Visualization Manager:
       Links:
         All Links Enabled: true
         Expand Joint Details: false
-        Expand Link Details: false
+        Expand Link Details: true
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base_link:
           Alpha: 1
           Show Axes: false
-          Show Trail: false
+          Show Trail: true
           Value: true
         lidar_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        robot_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         wheel_back_left_1:
           Alpha: 1
           Show Axes: false
@@ -118,7 +122,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -158,9 +162,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.46039697527885437
+      Pitch: 0.6247966885566711
       Target Frame: <Fixed Frame>
-      Yaw: 0.593582272529602
+      Yaw: 1.3385820388793945
     Saved: ~
 Window Geometry:
   Displays:
