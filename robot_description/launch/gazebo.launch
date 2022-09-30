@@ -1,7 +1,7 @@
 <launch>
 
   <param name="robot_description" command="$(find xacro)/xacro $(find robot_description)/urdf/robot.xacro"/>
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model robot"/>
+  
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
   <arg name="world_name" value="$(find robot_description)/worlds/cafu_world/model.sdf"/>
@@ -12,6 +12,8 @@
     <arg name="debug" value="false"/>
   </include>
 
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model robot"/>
+  
   <!--launch rviz-->
   <include file="$(find robot_description)/launch/display.launch"/>
   
