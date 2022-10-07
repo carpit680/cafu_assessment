@@ -14,7 +14,7 @@ avoid the obstacles
 
 ## Checklist
 
-- ~~Need to create the simulation in the Gazebo according by the provided scenario.~~
+- ~~Need to create the simulation in the Gazebo according to the provided scenario.~~
 - ~~In the Gazebo simulation need to use the 3D model of the robot which will be provided.~~
 - ~~Need to Create a ROS node to control the provided 3Dmodel using a hardware joystick.~~
 - ~~Use the same node and setup to create a SLAM map.~~
