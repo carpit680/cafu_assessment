@@ -14,9 +14,18 @@ avoid the obstacles
 
 ## Checklist
 
-- ~~In the Gazebo simulation need to use the 3D model of the robot which will be provided.~~ (roslaunch robot_description gazebo.launch)
-- ~~Need to Create a ROS node to control the provided 3Dmodel using a hardware joystick.~~ (rosrun turtlesim turtle_teleop_key)
+- ~~Need to create the simulation in the Gazebo according by the provided scenario.~~
+- ~~In the Gazebo simulation need to use the 3D model of the robot which will be provided.~~
+- ~~Need to Create a ROS node to control the provided 3Dmodel using a hardware joystick.~~
 - ~~Use the same node and setup to create a SLAM map.~~
-- Need to Create a ROS node to automatically avoid the obstacles on the way.
+- ~~Need to Create a ROS node to automatically avoid the obstacles on the way.~~
 - Need to Create a ROS node for GPS waypoint Navigation.
-- Need to create the simulation in the Gazebo according by the provided scenario.
+
+
+## To run
+
+- Simulation: `roslaunch robot_description gazebo.launch`
+- AMCL, map server, and move base: `roslaunch robot_description amcl.launch`
+- Keyboard control: `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+- Follow waypoints: `roslaunch follow_waypoints follow_waypoints.launch`
+- Waypoint navigation: `rostopic pub /path_ready std_msgs/Empty -1`
