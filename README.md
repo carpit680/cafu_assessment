@@ -10,7 +10,19 @@ reach the last one (Need to have the ability to change the points during the sim
 Robot must avoid obstacles, if any, along the way.
 Robot must create a SLAM map while running.
 Please Explain all your decision about the used sensors and how the robot makes decisions to
-avoid the obstacles
+avoid the obstacles 
+
+## Finished map
+![Finished map](Demo_assets/Finished_Map.png "Finished Map")
+
+## Mapping
+![Mapping](Demo_assets/Mapping.png "Mapping")
+
+## Robot CAD
+![Robot CAD](Demo_assets/Modified_robot_CAD.png "Robot CAD")
+
+## Robot URDF in Gazebo and Rviz
+![Robot URDF](Demo_assets/Robot_URDF_in_gazebo_and_rviz.png "Robot URDF")
 
 ## Checklist
 
